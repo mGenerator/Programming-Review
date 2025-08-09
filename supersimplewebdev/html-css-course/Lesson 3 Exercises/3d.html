@@ -1,35 +1,43 @@
-<style>
-.get-started-btn{
-border: none;
-width: 100px;
-height: 35px;
-background-color: rgb(121, 63, 192);
-color: white;
-border-radius: 3px;
-transition: background-color 0.15s;
-}
-.get-started-btn:hover{
-  background-color: rgb(93, 34, 164);
-}
-
-.download-btn{
-width: 100px;
-height: 35px;
-color: rgb(58, 58, 58);
-background-color: rgb(235, 233, 233);
-border-style: solid;
-border-width: 1px;
-border-radius: 3px;
-border-color: rgb(58, 58, 58);
-font-weight: bold;
-transition: background-color 0.15s, color 0.15s;
-}
-.download-btn:hover{
-background-color: rgb(58, 58, 58) ;
-color: rgb(235, 233, 233);
-}
-</style>
-
-
-<button class="get-started-btn">Get started</button>
-<button class="download-btn">Download</button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <style>   
+        .get-started{
+          background-color: rgb(135, 71, 203);
+          color: white;
+          border: none;
+          font-weight: bold;
+          width: 115px;
+          height: 40px;
+          border-radius:5px;
+          transition: background-color 0.15s;
+        }
+        .get-started:hover{
+          background-color: rgb(94, 51, 139);
+        }
+        .download{
+          background-color: white;
+          border: 1px solid gray;
+          border-color: gray;
+          color: gray;
+          width: 115px;
+          height: 40px;
+          /* border: none; */
+          font-weight: bold;
+          border-radius: 5px;
+          transition:background-color 0.15s, color 0.15s;
+        }
+        .download:hover{
+          background-color: gray;
+          color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <button class="get-started">Get started</button>
+    <button class="download">Download</button>
+  </body>
+</html>

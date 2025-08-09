@@ -1,52 +1,58 @@
-<style>
-  a {
-    color: rgb(0, 113, 133);
-    transition: color 0.15s;
-  }
-  a:hover {
-    color: rgb(201, 51, 5);
-  }
-  .stock-price {
-    color: rgb(0,118, 0);
-    font-weight: bold;
-  }
-  .add-btn {
-    border: none;
-    width: 115px;
-    height: 30px;
-    background-color: rgb(255,216, 20);
-    border-radius: 15px;
-    margin-right: 8px;
-    transition: background-color 0.15s, opacity 0.15s;
-  }
-  .add-btn:hover{
-    background-color: rgb(218, 184, 18);
-    cursor: pointer;
-  }
-  .add-btn:active{
-    opacity: 0.7;
-    
-  }
-  .buy-btn {
-    border: none;
-    width: 115px;
-    height: 30px;
-    background-color: rgb(255, 164, 28);
-    border-radius: 15px;
-    transition: background-color 0.15s, opacity 0.15s;
-  }
-  .buy-btn:hover{
-  background-color: rgb(225, 145, 24);
-  cursor: pointer;
-  }
-  .buy-btn:active{
-    opacity: 0.7;
-  }
-</style>
-
-<a href="https://amazon.com">Back to Amazon</a>
-<h1>Nike Black Running Shoes</h1>
-<p class="stock-price">$39 - in stock.</p>
-<p>Free delivery tomorrow</p>
-<button class="add-btn">Add to Cart</button>
-<button class="buy-btn">Buy now</button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <style>
+      a {
+        cursor: pointer;
+      }
+      a:hover {
+        color: red;
+      }
+      .stock{
+        color: green;
+        font-weight: bold;
+      }
+      .add-to-cart{
+        width: 110px;
+        height: 30px;
+        background-color:gold;
+        border: none;
+        border-radius: 15px;
+        transition: background-color 0.15s;
+        cursor: pointer;
+      }
+      .add-to-cart:hover{
+        background-color: rgb(242, 206, 4);
+      }
+      .add-to-cart:active{
+        opacity: 0.45;
+      }
+      .buy{
+        background-color: goldenrod;
+        width: 110px;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: background-color 0.15s, opacity 0.15s;
+      }
+      .buy:hover{
+        background-color: rgb(255, 191, 29);
+      }
+      .buy:active{
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://amazon.com">Back to Amazon</a>
+    <h1>Nike Black Running Shoes</h1>
+    <p class="stock">$39 - in stock.</p>
+    <p>Free delivery tomorrow.</p>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy">Buy now</button>
+  </body>
+</html>
