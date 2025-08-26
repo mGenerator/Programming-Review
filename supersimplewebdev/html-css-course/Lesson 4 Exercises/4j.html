@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stretch</title>
+  <style>
+    button{
+      background-color: rgb(73, 175, 73);
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top:2px;
+      padding-bottom: 2px;
+      border: none;
+      color: white;
+      transition: padding 1.5s;
+      transition: transform 0.15s;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.45);
+    }
+    button:hover{
+      cursor: pointer;
+      padding: 8px 32px 8px 32px;
+    }
+    button:active{
+      transform: translate(5px, 5px);
+      box-shadow:-2px -2px 0px rgba(0,0,0,0)
+    }
+  </style>
+</head>
+<body>
+  <button>Shadow</button>
+</body>
+</html>
