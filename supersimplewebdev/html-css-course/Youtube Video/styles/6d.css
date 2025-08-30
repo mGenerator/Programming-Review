@@ -1,0 +1,17 @@
+p{
+  font-family: Arial;
+  font-family: Montserrat;
+  
+  text-align: center;
+  margin: 0;
+}
+.model{
+font-weight: 700;
+font-size: 120px;
+}
+.order{
+  font-size: 60px;
+}
+span{
+  text-decoration: underline;
+}
