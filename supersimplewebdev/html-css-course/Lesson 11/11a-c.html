@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grids 1</title>
+  <style>
+    .container-1{
+      display: grid;
+      grid-template-columns: 200px 75px;
+    }
+    .blue{
+      background-color: blue;
+    }
+    .pink{
+background-color: pink;
+    }
+    .container-2{
+      display: grid;
+      grid-template-columns: 50px 1fr 75px;
+    }
+    .container-3{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-1">
+    <div class="blue">200px</div>
+    <div class="pink">75px</div>
+  </div>
+  <div class="container-2">
+    <div class="blue">col1</div>
+    <div class="pink">col2</div>
+    <div class="blue">col3</div>
+  </div>
+  <div class="container-3">
+    <div class="blue">col1</div>
+    <div class="pink">col2</div>
+    <div class="blue">col3</div>
+    <div class="pink">col4</div>
+    <div class="blue">col1</div>
+    <div class="pink">col2</div>
+    <div class="blue">col3</div>
+    <div class="pink">col4</div>
+  </div>
+</body>
+</html>
