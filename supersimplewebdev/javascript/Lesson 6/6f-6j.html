@@ -7,9 +7,9 @@
   </head>
   <body>
     <script>
-      const guess = prompt('heads or tails?');
       const randomNumber = Math.random();
       const result = randomNumber < 0.5 ? "heads" : "tails";
+      const guess = prompt('heads or tails?');
       const finalResult = guess === result ? 'You win!' : 'You lose!';
       alert(finalResult);
     </script>
