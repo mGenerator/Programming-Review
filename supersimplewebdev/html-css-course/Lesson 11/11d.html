@@ -11,15 +11,22 @@
       p {
         margin: 0;
       }
-      div{
-        display: inline-block;
-        vertical-align: top;
+      .card-grid{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        column-gap: 50px;
+        
+      }
+      .profile-grid{
+        column-gap: 20px;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 40px 1fr;
       }
       .card {
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
         width: min-content;
         background-color: white;
-        display: inline-block;
         overflow: hidden;
         margin-left: 20px;
       }
@@ -54,7 +61,6 @@
       }
       .profile{
         border-radius: 50px;
-        display: inline-block;
         width: 44px;
       }
       .margin-right{
@@ -63,7 +69,8 @@
     </style>
   </head>
   <body>
-    <div class="card">
+    <div class="card-grid">
+<div class="card">
       <div class="image-container">
         <img
           src="https://c.tenor.com/XkDd2gep5lkAAAAC/booty-shaking.gif"
@@ -74,7 +81,7 @@
       <div class="description-container">
         <div><p class="name">Mindy</p></div>
         
-        <div>
+        <div class="profile-grid">
           <div class="margin-right"><img class="profile" src="thumb_mb.jpeg"></div>
           <div><p class="mutual">1 mutual friend</p></div>
         </div>
@@ -92,7 +99,7 @@
 
       <div class="description-container">
         <div><p class="name">Sandra</p></div>
-        <div>
+        <div class="profile-grid">
           <div class="margin-right"><img class="profile" src="thumb_markplier.jpeg"></div>
           <div><p class="mutual">8 mutual friends</p></div>
         </div>
@@ -112,7 +119,7 @@
 
       <div class="description-container">
         <div><p class="name">Slime-San</p></div>
-        <div>
+        <div class="profile-grid">
           <div class="margin-right"><img class="profile" src="thumb_mb.jpeg"></div>
           <div><p class="mutual">5 mutual friends</p></div>
         </div>
@@ -122,5 +129,7 @@
         <input type="button" value="Add Friend" />
       </div>
     </div>
+    </div>
+    
   </body>
 </html>
