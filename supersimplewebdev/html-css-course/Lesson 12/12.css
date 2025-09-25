@@ -1,0 +1,137 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Flex box 1 */
+.flex-container {
+  display: flex;
+}
+.div-1 {
+  width: 200px;
+  background-color: lightblue;
+}
+.div-2 {
+  width: 75px;
+  background-color: lightpink;
+}
+
+/* Flex box 2 */
+.flex-container-2 {
+  display: flex;
+}
+.item-1 {
+  background-color: lightblue;
+  width: 50px;
+}
+.item-2 {
+  background-color: lightpink;
+  flex: 1;
+  max-width: 75px;
+}
+.item-3 {
+  background-color: lightblue;
+  width: 50px;
+}
+
+/* Flex box 3 */
+.flex-container-3 {
+  display: flex;
+  justify-content: space-between;
+}
+.item-4 {
+  background-color: lightblue;
+}
+.item-5 {
+  background-color: lightpink;
+}
+.item-6 {
+  background-color: lightblue;
+}
+.item-7 {
+  background-color: lightpink;
+}
+
+/* Flex box 4 */
+.flex-container-4 {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  border: 1px solid grey;
+}
+.item-8 {
+  background-color: lightblue;
+}
+.item-9 {
+  background-color: lightpink;
+}
+
+/* Flexbox 5 */
+.flex-container-5{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  width: 350px;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  height: 100px;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+/* #065fd4 */
+.row-quantity{
+  background-color: blue;
+  padding: 3px 11px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+/* FlexBox 6 _ 12g */
+.flex-container-6{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 0 auto;
+  border: 1px solid grey;
+  padding: 10px;
+}
+.row-2{
+display: flex;
+align-items: center;
+}
+.description{
+  flex: 1;
+}
+.description-text{
+  color: grey;
+}
+.name, .description-text{
+  line-height: 1.2em;
+  margin: 0;
+}
+.name{
+  font-weight: bold;
+}
+.row-quantity-2{
+  background-color: rgb(81, 110, 255);
+  color: white;
+  font-weight: bold;
+  padding: 6px 8px;
+  align-self: center;
+  border-radius: 5px;
+  align-self: center;
+  ;
+}
+.profile{
+  margin-right: 13px;
+}
+.profile-pic{
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50px;
+}
