@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function convertToFahrenheit(celsius) {
+        const fahrenheit = (celsius * 9) / 5 + 32;
+        return fahrenheit.toString();
+      }
+      function convertToCelsius(fahrenheit) {
+        const celsius = (fahrenheit - 32) * (5 / 9);
+        return celsius.toString();
+      }
+      function convertTemperature(degrees, unit) {
+        if (unit === "C") {
+          return convertToFahrenheit(degrees).toString();
+        } else {
+          return convertToCelsius(degrees).toString();
+        }
+      }
+      function convertLength(length, from, to) {
+        let unit = "";
+        //Check if invalid unit
+        if ((from !== "miles") && (from !== "km") && (from !== "feet")) {
+          unit = from;
+          return `Invalid unit: ${unit}`;
+        }else if((to !== "miles") && (to !== "km")  && (to !== "feet")){
+          unit = to;
+          return `Invalid unit: ${unit}`;
+        }
+        //Check if from === to, if so, no conversion necessary
+        else if (from === to) {
+          return length.toString();
+        } else {
+          if (from === "miles") {
+            //converting from miles
+            if (to === "km") {
+              //convert miles to km
+              return (length * 1.6).toString();
+            } else {
+              //convert miles to feet
+              return (length * 5280).toString();
+            }
+          } else if (from === "km") {
+            //converting from km
+            if (to === "miles") {
+              //convert km into miles
+              return (length / 1.6).toString();
+            } else {
+              //convert km into feet
+              return (length * 3281).toString();
+            }
+          } else {
+            //converting from feet
+            if (to === "miles") {
+              //convert feet to miles
+              return (length / 5280).toString();
+            } else {
+              //convert feet to km
+              return (length / 3281).toString();
+            }
+          }
+        }
+      }
+
+      console.log(convertToFahrenheit(25));
+      console.log(convertToCelsius(86));
+      console.log(convertTemperature(86, "F"));
+      console.log(convertLength(10, "miles", "feet"));
+    </script>
+  </body>
+</html>
