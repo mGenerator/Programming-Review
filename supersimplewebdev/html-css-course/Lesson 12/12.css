@@ -102,6 +102,11 @@ body{
 .row-2{
 display: flex;
 align-items: center;
+
+}
+.mid{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .description{
   flex: 1;
@@ -116,7 +121,7 @@ align-items: center;
 .name{
   font-weight: bold;
 }
-.row-quantity-2{
+.follow{
   background-color: rgb(81, 110, 255);
   color: white;
   font-weight: bold;
@@ -134,4 +139,33 @@ align-items: center;
   height: 44px;
   object-fit: cover;
   border-radius: 50px;
+}
+
+.flex-container-7{
+  display: flex;
+  height: 48px;
+  align-items: center;
+  background-color: rgb(120, 82, 178);
+  padding-left: 15px;
+  padding-right: 15PX;
+}
+.flex-container-7 input{
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 70px;
+  border: none;
+  border-radius: 40px;
+  padding: 6px 15px;
+}
+.flex-container-7 p{
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+.flex-container-7 button{
+border:  none;
+color: white;
+background-color: transparent;
+border: 1px solid white;
+padding: 8px 10px;
 }
