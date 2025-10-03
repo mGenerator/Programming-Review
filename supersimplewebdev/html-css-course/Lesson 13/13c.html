@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MORE FLEXBOX - 13c</title>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .cat-picture {
+        height: 56px;
+        border-radius: 28px;
+      }
+      p {
+        margin: 0;
+      }
+      .promotions {
+        display: flex;
+      }
+      .row1{
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="inbox"><p>ALL INBOXES</p></div>
+      <div class="promotions">
+        <img class="cat-picture" src="./catgif.gif" />
+        <div class="description">
+          <div class="row1">
+            <p class="title">Chewy Promotions</p>
+            <p class="time">4&colon;58 PM</p>
+          </div>
+          <p class="announcement">Biggest sales of the year!</p>
+          <p class="offer-text">
+            Hey there! We're writing to tell you about our...
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

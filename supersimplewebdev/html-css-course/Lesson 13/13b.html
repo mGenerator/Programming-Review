@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13b</title>
+    <style>
+      .flex-container {
+        display: flex;
+      }
+      .pink-box{
+        width: 100px;
+        background-color: lightpink;
+      }
+      .blue-box{
+        width: 200px;
+        background-color: lightblue;
+        display: flex;
+        flex-direction: column;
+      }
+      p{
+        margin: 0;
+        background-color: black;
+        color: white;
+      }
+      .row-2{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="pink-box"></div>
+      <div class="blue-box">
+        <div>row1</div>
+        <div class="row-2">
+          <p>row2</p>
+          <p>row2</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
