@@ -5,40 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MORE FLEXBOX - 13c</title>
     <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .inbox{
+        margin-bottom: 20px;
+      }
+      .container {
+        border-radius: 2px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        width: 408px;
+        margin: 0 auto;
+        padding: 10px 15px;
+      }
       .flex-container {
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
+        
       }
       .cat-picture {
-        height: 56px;
+        height: 44px;
         border-radius: 28px;
+        align-self: center;
       }
       p {
         margin: 0;
       }
       .promotions {
         display: flex;
+        /* margin: 25px 0; */
       }
-      .row1{
+      .row1 {
         display: flex;
         justify-content: space-between;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .time {
+        font-weight: normal;
+        color: grey;
+        font-size: 16px;
+        align-self: center;
+      }
+      .description {
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex: 1;
+      }
+      .announcement {
+        font-weight: bold;
+        margin: 4px 0px;
+      }
+      .offer-text {
+        color: grey;
       }
     </style>
   </head>
   <body>
-    <div class="flex-container">
+    <div class="container">
       <div class="inbox"><p>ALL INBOXES</p></div>
-      <div class="promotions">
-        <img class="cat-picture" src="./catgif.gif" />
-        <div class="description">
-          <div class="row1">
-            <p class="title">Chewy Promotions</p>
-            <p class="time">4&colon;58 PM</p>
+      <div class="flex-container">
+        <div class="promotions">
+          <img class="cat-picture" src="./catgif.gif" />
+          <div class="description">
+            <div class="row1">
+              <p class="title">Chewy Promotions</p>
+              <p class="time">4&colon;58 PM</p>
+            </div>
+            <p class="announcement">Biggest sales of the year!</p>
+            <p class="offer-text">
+              Hey there! We're writing to tell you about our...
+            </p>
           </div>
-          <p class="announcement">Biggest sales of the year!</p>
-          <p class="offer-text">
-            Hey there! We're writing to tell you about our...
-          </p>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="promotions">
+          <img class="cat-picture" src="./doggif.gif" />
+          <div class="description">
+            <div class="row1">
+              <p class="title">Best Buy</p>
+              <p class="time">12&colon;32 PM</p>
+            </div>
+            <p class="announcement">Your Best Buy eReceipt</p>
+            <p class="offer-text">
+              Thank you for shopping at Best Buy, here is...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="promotions">
+          <img class="cat-picture" src="./person gif.gif" />
+          <div class="description">
+            <div class="row1">
+              <p class="title">Netflix</p>
+              <p class="time">9&colon;00 AM</p>
+            </div>
+            <p class="announcement">Here's what's coming soon to Netflix</p>
+            <p class="offer-text">
+              Brand new movies and shows, old favorites...
+            </p>
+          </div>
         </div>
       </div>
     </div>
