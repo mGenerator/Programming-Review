@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Objects</title>
-    <style>
-
-    </style>
+    <style></style>
   </head>
   <body>
     <script>
-    /*
+      /*
       const product = {
         name: "socks",
         price: 1090
@@ -27,15 +25,73 @@
         console.log(product);
         */
 
-        const product2 = {
-          name: 'shirt',
-          'delivery-time': '1 day'
-        };
-        console.log(product2);
-        console.log(product2.name);
-        console.log(product2['name']);
-        console.log(product2['delivery-time']);
+      /*
+      const product2 = {
+        name: "shirt",
+        "delivery-time": "1 day",
+        waist: 15,
+        rating: {
+          stars: 4.5,
+          count: 87
+        },
+        fun: function function1(){
+          console.log('function inside object');
+        }
+      };
+      console.log(product2);
+      console.log(product2.name);
+      console.log(product2["name"]);
+      console.log(product2["waist"]);
+      console.log(product2["delivery-time"]);
+      product2["brainSize"] = "Huge brain";
+      console.log(product2["waist"]);
+      console.log(product2.rating.count);
+      product2.fun();
+      console.log(typeof console.log);
+      console.log(console);
+      console.log(typeof "dragonite");
+      console.log(typeof JSON.stringify(product2));  
+      let product3 = JSON.stringify(product2);
+      console.log(product3);
+      let product4 = JSON.parse(product3);
+      */
+      console.log("hello".length);
+      console.log("hello".toUpperCase());
+      
+      const object1 = {
+        message: 'hello'
+      };
+      const object2 = object1;
+      object1.message = 'Good job!';
+      console.log(object1);
+      console.log(object2);
+
+      const object3 = {
+        message: 'Good job!'
+      };
+      console.log(object3 === object1); //false due to each object pointing at different references though they have the same value
+      console.log(object2 === object1) //true as both objects point to the same reference
+
+      const object4 = {
+        message: 'Good job!',
+        price: 799
+      };
+      // const message = object4.message;
+      const {message, price} = object4; //Destructuring. take the message property value out of object4 and assigns the value to message
+      console.log(message);
+      console.log(price);
+
+      const object5 = {
+        message, /*same as message: message. its just shorter syntax*/
+        // method: function function1(){
+        //   console.log('method');
+        // }
+        method(){ //shorthand method of method: function function1()
+          console.log('method');
+        }
+      };
+      console.log(object5);
+      object5.method();
     </script>
-    
   </body>
 </html>
