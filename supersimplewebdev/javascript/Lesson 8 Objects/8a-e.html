@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8a</title>
+</head>
+<body>
+  
+  <script>
+    const basketball = {
+      price: 2095
+    };
+    basketball.price += 500;
+    console.log(basketball);
+    basketball['delivery-time'] = '3 days';
+    console.log(basketball);
+    
+    const soccerball = {
+      name: 'football',
+      price: 3000
+    }
+    const football = {
+      name: 'football',
+      price: 3000
+    }
+    function comparePrice(product1, product2){
+      if(product1.price > product2.price){
+        return product1;
+      }else{
+        return product2;
+      }  
+    }
+    console.log(comparePrice(soccerball, football));
+    
+    function isSameProduct(product1, product2){
+      if(product1.name === product2.name && product1.price === product2.price){
+        return true;
+      }else{
+        return false;
+      }
+    }
+    console.log(isSameProduct(soccerball, football));
+    console.log("dragonite".repeat(5));
+  </script>
+</body>
+</html>
